@@ -2,6 +2,7 @@
   "include": [
     "./.react-router/types/**/*",
     "./.react-router-parcel/types/**/*",
+    "react-router-vite",
     "app",
     "parcel"
   ],

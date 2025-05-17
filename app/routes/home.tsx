@@ -1,9 +1,11 @@
 import { MovieGrid } from "../components/movie-grid.tsx";
 import { MovieTile } from "../components/movie-tile.tsx";
 
-export const shouldRevalidate = () => false;
+// TODO: route-module transform to auto-wrap client exports?
+// export const shouldRevalidate = () => false;
+export { shouldRevalidate } from "./home.client.tsx"
 
-export async function ServerComponent() {
+export default async function ServerComponent() {
   let featuredMovieIds = [32932, 23643, 29915, 30895, 31472, 33411];
 
   return (
