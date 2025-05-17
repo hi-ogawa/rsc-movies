@@ -9,6 +9,7 @@ import { Favorites } from "./components/favorites-bar.tsx";
 import { sessionMiddleware } from "./session.ts";
 import { dataMiddleware } from "./db.ts";
 import { Resources } from "@hiogawa/vite-rsc/rsc"
+import { ServerHmr } from "./root.client.tsx";
 
 export const unstable_middleware: MiddlewareFunction<Response>[] = [
   sessionMiddleware,
@@ -38,6 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <Favorites />
         <ScrollRestoration />
+        <ServerHmr />
       </body>
     </html>
   );
