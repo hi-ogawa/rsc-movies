@@ -5,5 +5,4 @@
 dist/
 node_modules/
 git_old
-/data
 database.sqlite-*
