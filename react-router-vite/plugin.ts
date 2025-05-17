@@ -1,11 +1,14 @@
 import path from "node:path";
 import type { RouteConfigEntry } from "@react-router/dev/routes";
 import { type Plugin, runnerImport } from "vite";
+import childProcess from "node:child_process";
+
+let typegen: childProcess.ChildProcess;
 
 export function reactRouter(): Plugin[] {
   return [
     {
-      name: "react-router-routes",
+      name: "react-router:routes",
       async load(id) {
         if (id.endsWith("?react-router-routes")) {
           const imported = await runnerImport<any>(id);
@@ -24,6 +27,17 @@ export function reactRouter(): Plugin[] {
           });
           return code;
         }
+      },
+    },
+    {
+      name: "react-router:typegen",
+      apply: "serve",
+      buildStart() {
+        typegen = childProcess.spawn("react-router", ["typegen", "--watch"]);
+      },
+      buildEnd() {
+        if (typegen) typegen.kill();
+        typegen = undefined!;
       },
     },
   ];
