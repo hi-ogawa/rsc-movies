@@ -16,7 +16,7 @@ export async function loader({ params }: Route.LoaderArgs) {
   return { movie };
 }
 
-export async function ServerComponent({ loaderData }: Route.ComponentProps) {
+export default async function ServerComponent({ loaderData }: Route.ComponentProps) {
   let { movie } = loaderData;
 
   return (

@@ -5,9 +5,10 @@ import { AsyncLocalStorage } from "node:async_hooks";
 import { type unstable_MiddlewareFunction as MiddlewareFunction } from "react-router";
 
 export const db = new Database(
-  process.env.NODE_ENV === "production"
-    ? "/data/database.sqlite"
-    : path.join(process.cwd(), "database.sqlite"),
+  // process.env.NODE_ENV === "production"
+  //   ? "/data/database.sqlite"
+  //   : path.join(process.cwd(), "database.sqlite"),
+  path.join(process.cwd(), "database.sqlite")
 );
 
 db.pragma("journal_mode = WAL");
@@ -57,7 +58,7 @@ async function batchMovies(ids: number[]) {
   let placeholders = ids.map(() => "?").join(",");
   // order by year
   let query = `
-    SELECT 
+    SELECT
       m.*,
       JSON_GROUP_ARRAY(DISTINCT mg.genre_id) as genre_ids,
       JSON_GROUP_ARRAY(DISTINCT mc.cast_id) as cast_ids

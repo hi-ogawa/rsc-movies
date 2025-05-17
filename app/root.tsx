@@ -8,6 +8,7 @@ import { Header } from "./components/header.tsx";
 import { Favorites } from "./components/favorites-bar.tsx";
 import { sessionMiddleware } from "./session.ts";
 import { dataMiddleware } from "./db.ts";
+import { Resources } from "@hiogawa/vite-rsc/rsc"
 
 export const unstable_middleware: MiddlewareFunction<Response>[] = [
   sessionMiddleware,
@@ -30,6 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           rel="stylesheet"
         />
         <title>RSC Movies</title>
+        <Resources />
       </head>
       <body className="font-instrumentSans pb-56">
         <Header />
@@ -41,7 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function ServerComponent() {
+export default function ServerComponent() {
   return <Outlet />;
 }
 
