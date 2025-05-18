@@ -17,6 +17,11 @@ export async function isSessionFavorite(movieId: number) {
 }
 
 export async function getSessionFavorites() {
+  // TODO
+  // it looks like `Layout > Favorites` is rendered without middleware
+  // for example, when route is not found or .manifest request.
+  // for now, let's just do null check to avoid the error.
+  if (!session()) return []
   let sessionId = session().get("_id");
   return getFavorites(sessionId);
 }
