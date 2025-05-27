@@ -35,13 +35,16 @@ function vercelBuildPlugin(): Plugin {
     apply: () => !!process.env.VC_BUILD,
     configEnvironment() {
       return {
-        keepProcessEnv: false,
         resolve: {
           noExternal: true,
+          external: ["better-sqlite3"],
+        },
+        define: {
+          "process.env.NODE_ENV": `"production"`,
         },
       };
     },
-    async generateBundle() {
+    async writeBundle() {
       if (this.environment.name === "client") {
         const clientDir = this.environment.config.build.outDir;
         const adapterDir = path.join(clientDir, "..", "vercel");
@@ -76,30 +79,46 @@ function vercelBuildPlugin(): Plugin {
 
         // static
         fs.mkdirSync(path.join(adapterDir, "static"), { recursive: true });
-        fs.cpSync(
-          clientDir,
-          path.join(adapterDir, "static"),
-          {
-            recursive: true,
-          },
-        );
+        fs.cpSync(clientDir, path.join(adapterDir, "static"), {
+          recursive: true,
+        });
 
         // function config
-        fs.mkdirSync(path.join(adapterDir, "functions/index.func"), {
+        const functionDir = path.join(adapterDir, "functions/index.func");
+        fs.mkdirSync(functionDir, {
           recursive: true,
         });
         fs.writeFileSync(
-          path.join(adapterDir, "functions/index.func/.vc-config.json"),
+          path.join(functionDir, ".vc-config.json"),
           JSON.stringify(
             {
               runtime: "nodejs20.x",
-              handler: "index.mjs",
+              handler: "dist/rsc/__vercel.js",
               launcherType: "Nodejs",
             },
             null,
             2,
           ),
         );
+
+        // copy server entry and dependencies
+        const { nodeFileTrace } = await import("@vercel/nft");
+        const serverEntry = path.join(clientDir, "../rsc/__vercel.js");
+        fs.writeFileSync(
+          serverEntry,
+          `\
+import { createRequestListener } from "@mjackson/node-fetch-server";
+import handler from "./index.js";
+export default createRequestListener(handler);
+`,
+        );
+        const result = await nodeFileTrace([serverEntry]);
+        for (const file of result.fileList) {
+          const dest = path.join(functionDir, file);
+          fs.mkdirSync(path.dirname(dest), { recursive: true });
+          // this preserve pnpm node_modules releative symlinks
+          fs.cpSync(file, dest, { recursive: true });
+        }
       }
     },
   };
