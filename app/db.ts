@@ -3,12 +3,19 @@ import { batch } from "@ryanflorence/batch-loader";
 import path from "node:path";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { type unstable_MiddlewareFunction as MiddlewareFunction } from "react-router";
+import fs from "node:fs"
 
+let databasePath = process.env.DATABASE_PATH || path.join(process.cwd(), "database-small.sqlite");
+if (process.env.VERCEL) {
+  // use writable /tmp on vercel lambda
+  fs.copyFileSync(databasePath, "/tmp/database-small.sqlite");
+  databasePath = "/tmp/database-small.sqlite";
+}
 export const db = new Database(
   // process.env.NODE_ENV === "production"
   //   ? "/data/database.sqlite"
   //   : path.join(process.cwd(), "database.sqlite"),
-  path.join(process.cwd(), "database.sqlite")
+  databasePath,
 );
 
 db.pragma("journal_mode = WAL");
