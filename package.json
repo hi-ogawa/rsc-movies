@@ -18,7 +18,9 @@
     "build": "parcel build",
     "clean": "rm -rf dist node_modules .parcel-cache .react-router .react-router-parcel",
     "dev": "parcel",
-    "start": "node ./dist/server/server.js"
+    "start": "node ./dist/server/server.js",
+    "vc-build": "VERCEL=true vite build",
+    "vc-release": "vercel deploy --prod --prebuilt"
   },
   "dependencies": {
     "@mjackson/node-fetch-server": "^0.6.1",

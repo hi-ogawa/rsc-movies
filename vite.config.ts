@@ -32,7 +32,7 @@ function vercelBuildPlugin(): Plugin {
   return {
     name: "cf-build",
     enforce: "post",
-    apply: () => !!process.env.VC_BUILD,
+    apply: () => !!process.env.VERCEL,
     configEnvironment() {
       return {
         resolve: {
@@ -46,8 +46,8 @@ function vercelBuildPlugin(): Plugin {
     },
     async writeBundle() {
       if (this.environment.name === "client") {
+        const adapterDir = "./.vercel/output";
         const clientDir = this.environment.config.build.outDir;
-        const adapterDir = path.join(clientDir, "..", "vercel");
         fs.mkdirSync(adapterDir, { recursive: true });
         fs.writeFileSync(
           path.join(adapterDir, "config.json"),
