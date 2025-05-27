@@ -8,7 +8,7 @@ export const db = new Database(
   // process.env.NODE_ENV === "production"
   //   ? "/data/database.sqlite"
   //   : path.join(process.cwd(), "database.sqlite"),
-  path.join(process.cwd(), "database.sqlite")
+  path.join(process.cwd(), "database-small.sqlite")
 );
 
 db.pragma("journal_mode = WAL");

@@ -48,6 +48,7 @@ function vercelBuildPlugin(): Plugin {
       if (this.environment.name === "client") {
         const adapterDir = "./.vercel/output";
         const clientDir = this.environment.config.build.outDir;
+        fs.rmSync(adapterDir, { recursive: true, force: true });
         fs.mkdirSync(adapterDir, { recursive: true });
         fs.writeFileSync(
           path.join(adapterDir, "config.json"),
@@ -92,7 +93,7 @@ function vercelBuildPlugin(): Plugin {
           path.join(functionDir, ".vc-config.json"),
           JSON.stringify(
             {
-              runtime: "nodejs20.x",
+              runtime: "nodejs22.x",
               handler: "dist/rsc/__vercel.js",
               launcherType: "Nodejs",
             },
