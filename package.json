@@ -15,10 +15,9 @@
     }
   },
   "scripts": {
-    "build": "parcel build",
-    "clean": "rm -rf dist node_modules .parcel-cache .react-router .react-router-parcel",
-    "dev": "parcel",
-    "start": "node ./dist/server/server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "vc-build": "VERCEL=true vite build",
     "vc-release": "vercel deploy --prod --prebuilt"
   },
