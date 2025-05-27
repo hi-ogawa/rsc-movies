@@ -117,8 +117,14 @@ export default createRequestListener(handler);
         for (const file of result.fileList) {
           const dest = path.join(functionDir, file);
           fs.mkdirSync(path.dirname(dest), { recursive: true });
-          // this preserve pnpm node_modules releative symlinks
-          fs.cpSync(file, dest, { recursive: true });
+          // preserve pnpm node_modules releative symlinks
+          const stats = fs.lstatSync(file);
+          if (stats.isSymbolicLink()) {
+            const link = fs.readlinkSync(file);
+            fs.symlinkSync(link, dest);
+          } else {
+            fs.copyFileSync(file, dest);
+          }
         }
       }
     },
