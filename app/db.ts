@@ -5,7 +5,7 @@ import { AsyncLocalStorage } from "node:async_hooks";
 import { type unstable_MiddlewareFunction as MiddlewareFunction } from "react-router";
 import fs from "node:fs"
 
-let databasePath = path.join(process.cwd(), "database-small.sqlite");
+let databasePath = process.env.DATABASE_PATH || path.join(process.cwd(), "database-small.sqlite");
 if (process.env.VERCEL) {
   // use writable /tmp on vercel lambda
   fs.copyFileSync(databasePath, "/tmp/database-small.sqlite");
