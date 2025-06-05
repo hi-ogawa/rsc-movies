@@ -1,5 +1,5 @@
 {
-  "name": "parcel-react-server-starter",
+  "name": "react-server-rsc-movie-vite",
   "private": true,
   "type": "module",
   "version": "0.0.0",
@@ -36,7 +36,6 @@
     "@types/react-dom": "^19.0.0",
     "@vercel/nft": "^0.29.3",
     "@vitejs/plugin-react": "^4.4.1",
-    "postcss": "^8.2.1",
     "prettier": "^3.5.3",
     "tailwindcss": "^4.1.4",
     "vite": "^6.3.5",
