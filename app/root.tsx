@@ -9,7 +9,8 @@ import { Favorites } from "./components/favorites-bar.tsx";
 import { sessionMiddleware } from "./session.ts";
 import { dataMiddleware } from "./db.ts";
 import { Resources } from "@hiogawa/vite-rsc/rsc";
-import { GlobalNavigationLoadingBar, ServerHmr } from "./root.client.tsx";
+import { GlobalNavigationLoadingBar } from "./root.client.tsx";
+import { ServerHmr } from "../react-router-vite/server-hmr.tsx";
 
 export const unstable_middleware: MiddlewareFunction<Response>[] = [
   sessionMiddleware,
