@@ -7,7 +7,7 @@ export function AddToFavoritesButton({ isLiked }: { isLiked: boolean }) {
   return (
     <button
       type="submit"
-      onClick={event => {
+      onClick={(event) => {
         if (pending) event.preventDefault();
       }}
       className="font-instrumentSans font-semibold rounded-xl w-full text-xl border-[2px] py-2 px-5 group"
