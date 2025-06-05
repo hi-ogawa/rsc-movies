@@ -1,8 +1,8 @@
 {
   "name": "react-server-rsc-movie-vite",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,11 +20,10 @@
     "cookie": "^1.0.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "0.0.0-experimental-3f68c7c20",
-    "react-server-dom-webpack": "latest"
+    "react-router": "0.0.0-experimental-3f68c7c20"
   },
   "devDependencies": {
-    "@hiogawa/vite-rsc": "latest",
+    "@hiogawa/vite-rsc": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@855",
     "@react-router/dev": "0.0.0-experimental-3f68c7c20",
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.16",
