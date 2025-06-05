@@ -3,7 +3,9 @@ import { MovieTile } from "../components/movie-tile";
 import { Route } from "./+types/actor";
 import { MovieGrid } from "../components/movie-grid";
 
-export default async function ServerComponent({ params }: Route.ComponentProps) {
+export default async function ServerComponent({
+  params,
+}: Route.ComponentProps) {
   let actor = await load().actor(Number(params.id));
 
   return (
@@ -17,7 +19,7 @@ export default async function ServerComponent({ params }: Route.ComponentProps) 
           </h1>
         </div>
         <MovieGrid>
-          {actor.movie_ids.map(id => (
+          {actor.movie_ids.map((id) => (
             <MovieTile key={id} id={id} />
           ))}
         </MovieGrid>

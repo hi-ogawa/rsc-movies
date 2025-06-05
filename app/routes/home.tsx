@@ -3,7 +3,7 @@ import { MovieTile } from "../components/movie-tile.tsx";
 
 // TODO: route-module transform to auto-wrap client exports?
 // export const shouldRevalidate = () => false;
-export { shouldRevalidate } from "./home.client.tsx"
+export { shouldRevalidate } from "./home.client.tsx";
 
 export default async function ServerComponent() {
   let featuredMovieIds = [32932, 23643, 29915, 30895, 31472, 33411];

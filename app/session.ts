@@ -26,7 +26,7 @@ export let sessionMiddleware: MiddlewareFunction<Response> = async (
   if (!session.has("_id")) {
     session.set("_id", crypto.randomUUID());
   }
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     context.run(session, async () => {
       let response = await next();
       response.headers.append(
