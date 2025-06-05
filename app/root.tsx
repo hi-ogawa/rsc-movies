@@ -8,7 +8,6 @@ import { Header } from "./components/header.tsx";
 import { Favorites } from "./components/favorites-bar.tsx";
 import { sessionMiddleware } from "./session.ts";
 import { dataMiddleware } from "./db.ts";
-import { Resources } from "@hiogawa/vite-rsc/rsc";
 import { GlobalNavigationLoadingBar } from "./root.client.tsx";
 import { ServerHmr } from "../react-router-vite/server-hmr.tsx";
 
@@ -33,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           rel="stylesheet"
         />
         <title>RSC Movies</title>
-        <Resources />
+        {import.meta.viteRscCss}
       </head>
       <body className="font-instrumentSans pb-56">
         <Header />

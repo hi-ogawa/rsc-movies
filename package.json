@@ -24,7 +24,7 @@
     "react-server-dom-webpack": "latest"
   },
   "devDependencies": {
-    "@hiogawa/vite-rsc": "latest",
+    "@hiogawa/vite-rsc": "^0.3.0",
     "@react-router/dev": "0.0.0-experimental-3f68c7c20",
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.16",
