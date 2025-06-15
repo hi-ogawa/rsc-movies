@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           rel="stylesheet"
         />
         <title>RSC Movies</title>
-        {import.meta.viteRscCss}
+        {import.meta.viteRsc.loadCss()}
       </head>
       <body className="font-instrumentSans pb-56">
         <Header />
