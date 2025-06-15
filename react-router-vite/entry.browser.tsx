@@ -1,7 +1,6 @@
 import {
   createFromReadableStream,
   encodeReply,
-  initialize,
   setServerCallback,
 } from "@hiogawa/vite-rsc/browser";
 import * as React from "react";
@@ -12,12 +11,6 @@ import {
   getServerStream,
 } from "react-router";
 import type { ServerPayload } from "react-router/rsc";
-
-initialize({
-  onHmrReload() {
-    // currently handle by `<ServerHmr />` in `root.client.tsx`
-  },
-});
 
 setServerCallback(
   createCallServer({

@@ -1,8 +1,6 @@
 import {
   decodeAction,
   decodeReply,
-  importSsr,
-  initialize,
   loadServerAction,
   renderToReadableStream,
 } from "@hiogawa/vite-rsc/rsc";
@@ -14,8 +12,6 @@ import {
 
 // @ts-ignore
 import routes from "../app/routes?react-router-routes";
-
-initialize();
 
 // workaround for better-sqlite
 // https://github.com/TooTallNate/node-bindings/blob/c8033dcfc04c34397384e23f7399a30e6c13830d/bindings.js#L90-L94
@@ -48,6 +44,8 @@ async function callServer(request: Request) {
 }
 
 export default async function handler(requrest: Request) {
-  const ssr = await importSsr<typeof import("./entry.ssr")>();
+  const ssr = await import.meta.viteRsc.loadSsrModule<
+    typeof import("./entry.ssr")
+  >("index");
   return ssr.default(requrest, callServer);
 }
