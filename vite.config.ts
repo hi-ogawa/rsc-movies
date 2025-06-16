@@ -17,42 +17,6 @@ export default defineConfig({
     reactRouter({
       appDirectory: "./app",
     }),
-    {
-      // make `AsyncLocalStorage` available globally for React request context on edge build (e.g. React.cache, ssr preload)
-      // https://github.com/facebook/react/blob/f14d7f0d2597ea25da12bcf97772e8803f2a394c/packages/react-server/src/forks/ReactFlightServerConfig.dom-edge.js#L16-L19
-      name: "inject-async-local-storage",
-      async configureServer() {
-        const __viteRscNodeModule = await import("node:module");
-        (globalThis as any).__non_webpack_require__ =
-          __viteRscNodeModule.createRequire(import.meta.url);
-      },
-      banner(chunk) {
-        if (
-          (this.environment.name === "ssr" ||
-            this.environment.name === "rsc") &&
-          this.environment.mode === "build" &&
-          chunk.isEntry
-        ) {
-          return `\
-            import * as __viteRscNodeModule from "node:async_hooks";
-            globalThis.__non_webpack_require__ = __viteRscNodeModule.createRequire(import.meta.url);
-          `;
-        }
-        return "";
-      },
-    },
-    // {
-    //   name: "__non_webpack_require__",
-    //   config() {
-    //   },
-    // },
-    // rsc({
-    //   entries: {
-    //     client: "./react-router-vite/entry.browser.tsx",
-    //     ssr: "./react-router-vite/entry.ssr.tsx",
-    //     rsc: "./react-router-vite/entry.rsc.tsx",
-    //   },
-    // }),
     inspect(),
     vercelBuildPlugin(),
   ],
