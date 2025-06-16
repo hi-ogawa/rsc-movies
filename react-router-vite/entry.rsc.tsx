@@ -13,11 +13,6 @@ import {
 // @ts-ignore
 import routes from "../app/routes?react-router-routes";
 
-// workaround for better-sqlite
-// https://github.com/TooTallNate/node-bindings/blob/c8033dcfc04c34397384e23f7399a30e6c13830d/bindings.js#L90-L94
-import { createRequire } from "node:module";
-(globalThis as any).__non_webpack_require__ = createRequire(import.meta.url);
-
 const decodeCallServer: DecodeCallServerFunction = async (actionId, reply) => {
   const args = await decodeReply(reply);
   const action = await loadServerAction(actionId);
