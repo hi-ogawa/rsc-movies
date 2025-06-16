@@ -13,7 +13,7 @@
     "jsx": "react-jsx",
     "useDefineForClassFields": true,
     "rootDirs": [".", "./.react-router/types", "./.react-router-parcel/types"],
-    "types": ["node", "vite/client", "@hiogawa/vite-rsc/types"],
+    "types": ["node", "vite/client"],
 
     /* Modules */
     "module": "ESNext",

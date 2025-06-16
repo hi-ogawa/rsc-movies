@@ -9,7 +9,8 @@ import { Favorites } from "./components/favorites-bar.tsx";
 import { sessionMiddleware } from "./session.ts";
 import { dataMiddleware } from "./db.ts";
 import { GlobalNavigationLoadingBar } from "./root.client.tsx";
-import { ServerHmr } from "../react-router-vite/server-hmr.tsx";
+// import { ServerHmr } from "../react-router-vite/server-hmr.tsx";
+import { ServerHmr } from "@hiogawa/vite-rsc-react-router/lib/client";
 
 export const unstable_middleware: MiddlewareFunction<Response>[] = [
   sessionMiddleware,
@@ -32,6 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           rel="stylesheet"
         />
         <title>RSC Movies</title>
+        {/* @ts-ignore */}
         {import.meta.viteRsc.loadCss()}
       </head>
       <body className="font-instrumentSans pb-56">
