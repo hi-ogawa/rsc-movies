@@ -14,9 +14,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react(),
-    reactRouter({
-      appDirectory: "./app",
-    }),
+    reactRouter(),
     inspect(),
     vercelBuildPlugin(),
   ],
