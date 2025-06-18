@@ -17,7 +17,9 @@ export function reactRouter(): Plugin[] {
             {
               id: "root",
               path: "",
-              file: path.resolve(appDirectory, "root.tsx"),
+              file:
+                path.resolve(appDirectory, "root.tsx") +
+                "?vite-rsc-css-export=Layout",
               children: imported.module.default,
             },
           ];

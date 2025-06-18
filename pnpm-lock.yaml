@@ -34,8 +34,8 @@ importers:
         version: 0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@hiogawa/vite-rsc':
-        specifier: ^0.4.2
-        version: 0.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
+        specifier: ^0.4.3
+        version: 0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       '@react-router/dev':
         specifier: 0.0.0-experimental-7db49e8d4
         version: 0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
@@ -378,11 +378,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hiogawa/transforms@0.1.1':
-    resolution: {integrity: sha512-NAJ38s8lMMSDv7HOupWt1w5EJ8poMOWPd+JCmmfHg8sdWgFCjCGHnaDi5pTGEBxYLzso9K2urfyK2rW6HORsHw==}
+  '@hiogawa/transforms@0.1.2':
+    resolution: {integrity: sha512-0izNRzKgRakIChWua/MJH4Bb4bF92Wa9aU3ab7hux3zSE4nnTJ7KvOXLVwgNt+rExysmI9G3bvQawwOifiUKtA==}
 
-  '@hiogawa/vite-rsc@0.4.2':
-    resolution: {integrity: sha512-MKHX7B6mqcynBJp9MQQLgMipOavvYIfyhasjZGcJqeMhB8kmGo6QHfRxZheiDo1jGjWHyMsHR1ayHIuMcrK+2w==}
+  '@hiogawa/vite-rsc@0.4.3':
+    resolution: {integrity: sha512-MM0DxODvcuL6aJoDZ3+PwYqAjY1xo/+uF3/3ai5xlN6+aIMIQV+pptQDWXimU/UqJjec65is1CzLNs5QNWqVeA==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -1981,15 +1981,15 @@ snapshots:
   '@esbuild/win32-x64@0.25.2':
     optional: true
 
-  '@hiogawa/transforms@0.1.1':
+  '@hiogawa/transforms@0.1.2':
     dependencies:
       estree-walker: 3.0.3
       magic-string: 0.30.17
       periscopic: 4.0.2
 
-  '@hiogawa/vite-rsc@0.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
+  '@hiogawa/vite-rsc@0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
     dependencies:
-      '@hiogawa/transforms': 0.1.1
+      '@hiogawa/transforms': 0.1.2
       '@mjackson/node-fetch-server': 0.6.1
       magic-string: 0.30.17
       react: 19.1.0
