@@ -12,10 +12,6 @@ export default defineConfig({
   build: {
     minify: false,
   },
-  // only needed when linking local deps
-  // resolve: {
-  //   dedupe: ["react-router"]
-  // },
   plugins: [
     tailwindcss(),
     react(),
