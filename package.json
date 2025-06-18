@@ -23,7 +23,8 @@
     "react-router": "0.0.0-experimental-7db49e8d4"
   },
   "devDependencies": {
-    "@hiogawa/vite-rsc": "^0.4.2",
+    "@hiogawa/vite-rsc": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@9ae96f7",
+    "@hiogawa/vite-rsc-react-router": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc-react-router@9ae96f7",
     "@react-router/dev": "0.0.0-experimental-7db49e8d4",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.7",

@@ -2,7 +2,7 @@ import rsc from "@hiogawa/vite-rsc/plugin";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
-import { reactRouter } from "./react-router-vite/plugin";
+import { reactRouter } from "@hiogawa/vite-rsc-react-router/plugin";
 import inspect from "vite-plugin-inspect";
 import path from "node:path";
 import fs from "node:fs";
@@ -12,22 +12,21 @@ export default defineConfig({
   build: {
     minify: false,
   },
+  // only needed when linking local deps
+  // resolve: {
+  //   dedupe: ["react-router"]
+  // },
   plugins: [
     tailwindcss(),
     react(),
     reactRouter(),
-    rsc({
-      entries: {
-        client: "./react-router-vite/entry.browser.tsx",
-        ssr: "./react-router-vite/entry.ssr.tsx",
-        rsc: "./react-router-vite/entry.rsc.tsx",
-      },
-    }),
+    rsc(),
     inspect(),
     vercelBuildPlugin(),
   ],
 }) as any;
 
+// quickly put together to deploy better-sqlite3 using @vercel/nft
 function vercelBuildPlugin(): Plugin {
   return {
     name: "vc-build",
