@@ -1,8 +1,8 @@
 import rsc from "@hiogawa/vite-rsc/plugin";
+import { reactRouter } from "@hiogawa/vite-rsc-react-router/plugin";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
-import { reactRouter } from "@hiogawa/vite-rsc-react-router/plugin";
 import inspect from "vite-plugin-inspect";
 import path from "node:path";
 import fs from "node:fs";
