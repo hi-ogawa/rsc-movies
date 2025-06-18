@@ -27,10 +27,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
+        {/* TODO: HMR breaks font styleshee. For now, this is moved inside app/styles.css */}
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Boldonse&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif&display=swap"
           rel="stylesheet"
-        />
+        /> */}
         <title>RSC Movies</title>
       </head>
       <body className="font-instrumentSans pb-56">
