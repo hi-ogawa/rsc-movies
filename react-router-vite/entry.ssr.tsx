@@ -1,7 +1,9 @@
 import { createFromReadableStream } from "@hiogawa/vite-rsc/ssr";
-// @ts-ignore
 import * as ReactDomServer from "react-dom/server.edge";
-import { RSCStaticRouter, routeRSCServerRequest } from "react-router";
+import {
+  unstable_RSCStaticRouter as RSCStaticRouter,
+  unstable_routeRSCServerRequest as routeRSCServerRequest,
+} from "react-router";
 import bootstrapScriptContent from "virtual:vite-rsc/bootstrap-script-content";
 
 export default async function handler(

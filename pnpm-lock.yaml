@@ -30,15 +30,15 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       react-router:
-        specifier: 0.0.0-experimental-3f68c7c20
-        version: 0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: 0.0.0-experimental-7db49e8d4
+        version: 0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@hiogawa/vite-rsc':
-        specifier: ^0.4.1
-        version: 0.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
+        specifier: ^0.4.2
+        version: 0.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       '@react-router/dev':
-        specifier: 0.0.0-experimental-3f68c7c20
-        version: 0.0.0-experimental-3f68c7c20(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
+        specifier: 0.0.0-experimental-7db49e8d4
+        version: 0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@4.1.7)
@@ -381,8 +381,8 @@ packages:
   '@hiogawa/transforms@0.1.1':
     resolution: {integrity: sha512-NAJ38s8lMMSDv7HOupWt1w5EJ8poMOWPd+JCmmfHg8sdWgFCjCGHnaDi5pTGEBxYLzso9K2urfyK2rW6HORsHw==}
 
-  '@hiogawa/vite-rsc@0.4.1':
-    resolution: {integrity: sha512-GQ19F8q004E7wjCL/RARhblPXx6W2SC+hdVc8xw85xPy22iU0Ft67jJtY1gI7k3jqoPWrBNaUjgmemJIZRoazw==}
+  '@hiogawa/vite-rsc@0.4.2':
+    resolution: {integrity: sha512-MKHX7B6mqcynBJp9MQQLgMipOavvYIfyhasjZGcJqeMhB8kmGo6QHfRxZheiDo1jGjWHyMsHR1ayHIuMcrK+2w==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -447,13 +447,13 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@react-router/dev@0.0.0-experimental-3f68c7c20':
-    resolution: {integrity: sha512-lRf/Q3BfndKjlms9EDP0IqbsKHmlgYJrmc6Ug4xihQ+6MdJzfXzQqBfLt9dwBQ3+WsucmZNEp0/7/r4l8vBnHQ==}
+  '@react-router/dev@0.0.0-experimental-7db49e8d4':
+    resolution: {integrity: sha512-ybT7W3w8D45pgTnuyvLmxQHxzz6mWjM95IZpWDkkN7W9X5r89LVQBHi9JO4aXf+7BSJ/ugsf/BdmIM055iBEOQ==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
-      '@react-router/serve': ^0.0.0-experimental-3f68c7c20
-      react-router: ^0.0.0-experimental-3f68c7c20
+      '@react-router/serve': ^0.0.0-experimental-7db49e8d4
+      react-router: ^0.0.0-experimental-7db49e8d4
       typescript: ^5.1.0
       vite: ^5.1.0 || ^6.0.0
       wrangler: ^3.28.2 || ^4.0.0
@@ -465,11 +465,11 @@ packages:
       wrangler:
         optional: true
 
-  '@react-router/node@0.0.0-experimental-3f68c7c20':
-    resolution: {integrity: sha512-/tMtoqWfng3IoV2O/aATjhnoteLE9cjeV75MUbEtofKtIZCsTmg+bMn25T8grzowlpGuCwk4qFSqs7wH65h3gw==}
+  '@react-router/node@0.0.0-experimental-7db49e8d4':
+    resolution: {integrity: sha512-AZJ/KSYn5j69dSA1hgiQFpj8m/TkBFqgqkx4fSckBqsN9GK1sJk2EDq8t+Xjb3EGhX3DyQlXJd6AVf8VflxOnQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      react-router: 0.0.0-experimental-3f68c7c20
+      react-router: 0.0.0-experimental-7db49e8d4
       typescript: ^5.1.0
     peerDependenciesMeta:
       typescript:
@@ -953,6 +953,9 @@ packages:
   es-module-lexer@1.6.0:
     resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
 
+  es-module-lexer@1.7.0:
+    resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
+
   esbuild@0.25.2:
     resolution: {integrity: sha512-16854zccKPnC+toMywC+uKNeYSv+/eXkevRAfwRD/G9Cleq66m8XFIrigkbvauLLlCfDL45Q2cWegSg53gGBnQ==}
     engines: {node: '>=18'}
@@ -975,14 +978,6 @@ packages:
   expand-template@2.0.3:
     resolution: {integrity: sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==}
     engines: {node: '>=6'}
-
-  fdir@6.4.4:
-    resolution: {integrity: sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
 
   fdir@6.4.6:
     resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
@@ -1336,10 +1331,6 @@ packages:
     resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
     engines: {node: '>=4'}
 
-  postcss@8.5.3:
-    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.5.5:
     resolution: {integrity: sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1395,8 +1386,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react-router@0.0.0-experimental-3f68c7c20:
-    resolution: {integrity: sha512-j3swHqxK61kUn4nXQLhPewuwbwNeZAAJ74zDGaT7bTHspyuBM8TdQ93t1XGyMRa93niDrHDUPjfwkooyZ0gPQA==}
+  react-router@0.0.0-experimental-7db49e8d4:
+    resolution: {integrity: sha512-7LNNQ6DQmewph4/DLitj/B9bCiaoFiDAa+ON4JGu4lUiutfTmInYTAT5Ettif07xsB9jn/+huw+CuwxG000M2A==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -1546,10 +1537,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  tinyglobby@0.2.13:
-    resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
-    engines: {node: '>=12.0.0'}
-
   tinyglobby@0.2.14:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
@@ -1613,8 +1600,8 @@ packages:
     peerDependencies:
       vite: ^2.6.0 || ^3.0.0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0
 
-  vite-node@3.0.0-beta.2:
-    resolution: {integrity: sha512-ofTf6cfRdL30Wbl9n/BX81EyIR5s4PReLmSurrxQ+koLaWUNOEo8E0lCM53OJkb8vpa2URM2nSrxZsIFyvY1rg==}
+  vite-node@3.2.4:
+    resolution: {integrity: sha512-EbKSKh+bh1E1IFxeO0pg1n4dvoOTt0UDiXMd/qn++r98+jPO1xtJilvXldeuQ8giIB5IkpjCgMleHMNEsGH6pg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
@@ -1626,46 +1613,6 @@ packages:
       vite: ^6.0.0
     peerDependenciesMeta:
       '@nuxt/kit':
-        optional: true
-
-  vite@6.3.5:
-    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
-      jiti: '>=1.21.0'
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      sass-embedded: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.16.0
-      tsx: ^4.8.1
-      yaml: ^2.4.2
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      jiti:
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      sass-embedded:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-      tsx:
-        optional: true
-      yaml:
         optional: true
 
   vite@7.0.0-beta.1:
@@ -2040,7 +1987,7 @@ snapshots:
       magic-string: 0.30.17
       periscopic: 4.0.2
 
-  '@hiogawa/vite-rsc@0.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
+  '@hiogawa/vite-rsc@0.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
     dependencies:
       '@hiogawa/transforms': 0.1.1
       '@mjackson/node-fetch-server': 0.6.1
@@ -2137,7 +2084,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@react-router/dev@0.0.0-experimental-3f68c7c20(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
+  '@react-router/dev@0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/generator': 7.27.0
@@ -2148,7 +2095,7 @@ snapshots:
       '@babel/traverse': 7.27.0
       '@babel/types': 7.27.0
       '@npmcli/package-json': 4.0.1
-      '@react-router/node': 0.0.0-experimental-3f68c7c20(react-router@0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@react-router/node': 0.0.0-experimental-7db49e8d4(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       arg: 5.0.2
       babel-dead-code-elimination: 1.0.10
       chokidar: 4.0.3
@@ -2162,12 +2109,12 @@ snapshots:
       picocolors: 1.1.1
       prettier: 2.8.8
       react-refresh: 0.14.2
-      react-router: 0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-router: 0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       semver: 7.7.1
       set-cookie-parser: 2.7.1
       valibot: 0.41.0
       vite: 7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
-      vite-node: 3.0.0-beta.2(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
+      vite-node: 3.2.4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -2184,10 +2131,10 @@ snapshots:
       - tsx
       - yaml
 
-  '@react-router/node@0.0.0-experimental-3f68c7c20(react-router@0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
+  '@react-router/node@0.0.0-experimental-7db49e8d4(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       '@mjackson/node-fetch-server': 0.2.0
-      react-router: 0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-router: 0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       source-map-support: 0.5.21
       stream-slice: 0.1.2
       undici: 6.21.2
@@ -2589,6 +2536,8 @@ snapshots:
 
   es-module-lexer@1.6.0: {}
 
+  es-module-lexer@1.7.0: {}
+
   esbuild@0.25.2:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.25.2
@@ -2628,10 +2577,6 @@ snapshots:
   exit-hook@2.2.1: {}
 
   expand-template@2.0.3: {}
-
-  fdir@6.4.4(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
 
   fdir@6.4.6(picomatch@4.0.2):
     optionalDependencies:
@@ -2920,12 +2865,6 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.3:
-    dependencies:
-      nanoid: 3.3.11
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
   postcss@8.5.5:
     dependencies:
       nanoid: 3.3.11
@@ -2981,7 +2920,7 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
-  react-router@0.0.0-experimental-3f68c7c20(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       cookie: 1.0.2
       react: 19.1.0
@@ -3150,11 +3089,6 @@ snapshots:
       source-map-support: 0.5.21
     optional: true
 
-  tinyglobby@0.2.13:
-    dependencies:
-      fdir: 6.4.4(picomatch@4.0.2)
-      picomatch: 4.0.2
-
   tinyglobby@0.2.14:
     dependencies:
       fdir: 6.4.6(picomatch@4.0.2)
@@ -3206,13 +3140,13 @@ snapshots:
     dependencies:
       vite: 7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
 
-  vite-node@3.0.0-beta.2(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2):
+  vite-node@3.2.4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2):
     dependencies:
       cac: 6.7.14
-      debug: 4.4.0
-      es-module-lexer: 1.6.0
-      pathe: 1.1.2
-      vite: 6.3.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
+      debug: 4.4.1
+      es-module-lexer: 1.7.0
+      pathe: 2.0.3
+      vite: 7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -3241,21 +3175,6 @@ snapshots:
       vite-dev-rpc: 1.0.7(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
     transitivePeerDependencies:
       - supports-color
-
-  vite@6.3.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2):
-    dependencies:
-      esbuild: 0.25.2
-      fdir: 6.4.4(picomatch@4.0.2)
-      picomatch: 4.0.2
-      postcss: 8.5.3
-      rollup: 4.40.0
-      tinyglobby: 0.2.13
-    optionalDependencies:
-      '@types/node': 22.14.0
-      fsevents: 2.3.3
-      jiti: 2.4.2
-      lightningcss: 1.30.1
-      terser: 5.39.2
 
   vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2):
     dependencies:
