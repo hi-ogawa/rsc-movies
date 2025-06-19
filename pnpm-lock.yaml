@@ -34,11 +34,11 @@ importers:
         version: 0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@hiogawa/vite-rsc':
-        specifier: ^0.4.3
-        version: 0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
+        specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b
+        version: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       '@hiogawa/vite-rsc-react-router':
-        specifier: ^0.0.0
-        version: 0.0.0(@hiogawa/vite-rsc@0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(@react-router/dev@0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(react-dom@19.1.0(react@19.1.0))(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
+        specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc-react-router@cee0e0b
+        version: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc-react-router@cee0e0b(@hiogawa/vite-rsc@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(@react-router/dev@0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(react-dom@19.1.0(react@19.1.0))(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       '@react-router/dev':
         specifier: 0.0.0-experimental-7db49e8d4
         version: 0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
@@ -381,11 +381,13 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hiogawa/transforms@0.1.2':
-    resolution: {integrity: sha512-0izNRzKgRakIChWua/MJH4Bb4bF92Wa9aU3ab7hux3zSE4nnTJ7KvOXLVwgNt+rExysmI9G3bvQawwOifiUKtA==}
+  '@hiogawa/transforms@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@cee0e0bbe1d25df1288a0b531c02d249989b02a2':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@cee0e0bbe1d25df1288a0b531c02d249989b02a2}
+    version: 0.1.2
 
-  '@hiogawa/vite-rsc-react-router@0.0.0':
-    resolution: {integrity: sha512-r1xIRJCe/kgf2/NDmQRsty1ajf19vFZPB5K8uG18dXvzCVdiCavLyOptzy0LPh5PV3n7mXHSvKnjV9WrBtcGuA==}
+  '@hiogawa/vite-rsc-react-router@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc-react-router@cee0e0b':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc-react-router@cee0e0b}
+    version: 0.0.0
     peerDependencies:
       '@hiogawa/vite-rsc': '*'
       '@react-router/dev': '*'
@@ -394,8 +396,9 @@ packages:
       react-router: '*'
       vite: '*'
 
-  '@hiogawa/vite-rsc@0.4.3':
-    resolution: {integrity: sha512-MM0DxODvcuL6aJoDZ3+PwYqAjY1xo/+uF3/3ai5xlN6+aIMIQV+pptQDWXimU/UqJjec65is1CzLNs5QNWqVeA==}
+  '@hiogawa/vite-rsc@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b}
+    version: 0.4.3
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -1564,6 +1567,9 @@ packages:
   tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
 
+  turbo-stream@3.1.0:
+    resolution: {integrity: sha512-tVI25WEXl4fckNEmrq70xU1XumxUwEx/FZD5AgEcV8ri7Wvrg2o7GEq8U7htrNx3CajciGm+kDyhRf5JB6t7/A==}
+
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
@@ -1994,28 +2000,29 @@ snapshots:
   '@esbuild/win32-x64@0.25.2':
     optional: true
 
-  '@hiogawa/transforms@0.1.2':
+  '@hiogawa/transforms@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@cee0e0bbe1d25df1288a0b531c02d249989b02a2':
     dependencies:
       estree-walker: 3.0.3
       magic-string: 0.30.17
       periscopic: 4.0.2
 
-  '@hiogawa/vite-rsc-react-router@0.0.0(@hiogawa/vite-rsc@0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(@react-router/dev@0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(react-dom@19.1.0(react@19.1.0))(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
+  '@hiogawa/vite-rsc-react-router@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc-react-router@cee0e0b(@hiogawa/vite-rsc@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(@react-router/dev@0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)))(react-dom@19.1.0(react@19.1.0))(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
     dependencies:
-      '@hiogawa/vite-rsc': 0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
+      '@hiogawa/vite-rsc': https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       '@react-router/dev': 0.0.0-experimental-7db49e8d4(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-router: 0.0.0-experimental-7db49e8d4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       vite: 7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
 
-  '@hiogawa/vite-rsc@0.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
+  '@hiogawa/vite-rsc@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-rsc@cee0e0b(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))':
     dependencies:
-      '@hiogawa/transforms': 0.1.2
+      '@hiogawa/transforms': https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@cee0e0bbe1d25df1288a0b531c02d249989b02a2
       '@mjackson/node-fetch-server': 0.6.1
       magic-string: 0.30.17
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
+      turbo-stream: 3.1.0
       vite: 7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)
       vitefu: 1.0.6(vite@7.0.0-beta.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2))
 
@@ -3123,6 +3130,8 @@ snapshots:
   tunnel-agent@0.6.0:
     dependencies:
       safe-buffer: 5.2.1
+
+  turbo-stream@3.1.0: {}
 
   undici-types@6.21.0: {}
 
