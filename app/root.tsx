@@ -9,7 +9,7 @@ import { Favorites } from "./components/favorites-bar.tsx";
 import { sessionMiddleware } from "./session.ts";
 import { dataMiddleware } from "./db.ts";
 import { GlobalNavigationLoadingBar } from "./root.client.tsx";
-import { ServerHmr } from "../react-router-vite/server-hmr.tsx";
+import { ServerHmr } from "@hiogawa/vite-rsc-react-router/client";
 
 export const unstable_middleware: MiddlewareFunction<Response>[] = [
   sessionMiddleware,
@@ -27,6 +27,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* TODO: HMR breaks font stylesheet. For now, we add the same in app/styles.css */}
         <link
           href="https://fonts.googleapis.com/css2?family=Boldonse&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif&display=swap"
           rel="stylesheet"

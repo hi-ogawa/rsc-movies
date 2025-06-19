@@ -1,3 +1,4 @@
 "use client";
 
-export const shouldRevalidate = () => false;
+// TODO: `false` would break server HMR
+export const shouldRevalidate = () => import.meta.env.DEV;
